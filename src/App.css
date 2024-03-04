@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-left {
   display: flex;
-  flex-direction: column;
+}
+
+.navbar-left ul, .navbar-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-left ul {
+  margin-left: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-left ul li button,
+.navbar-right ul li button {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+    background-color: transparent; /* Fondo transparente por defecto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: var(--md);
+}
+
+.navbar-left ul li button:hover,
+.navbar-right ul li button:hover {
+  color: var(--hospital-green);
+  border: 1px solid var(--hospital-green);
+}
+
+.logo {
+  width: 100px;
 }
