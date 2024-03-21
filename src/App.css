@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --white: #FFFFFF;
   --black: #000000;
@@ -9,41 +15,3 @@
   --lg: 18px;
 }
 
-.navbar-left {
-  display: flex;
-}
-
-.navbar-left ul, .navbar-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  height: 60px;
-}
-
-.navbar-left ul {
-  margin-left: 12px;
-}
-
-.navbar-left ul li button,
-.navbar-right ul li button {
-    text-decoration: none;
-    color: var(--very-light-pink);
-    border: 1px solid var(--white);
-    padding: 8px;
-    border-radius: 8px;
-    background-color: transparent; /* Fondo transparente por defecto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size: var(--md);
-}
-
-.navbar-left ul li button:hover,
-.navbar-right ul li button:hover {
-  color: var(--hospital-green);
-  border: 1px solid var(--hospital-green);
-}
-
-.logo {
-  width: 100px;
-}

@@ -1,3 +1,4 @@
+import './CartWidget.css';
 import cart from '../../icons/icon_shopping_cart.svg';
 const CartWidget = () => {
     return(
