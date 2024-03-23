@@ -19,7 +19,7 @@ const NavBar = () => {
             <button type="button">Electronics</button>
           </li>
           <li>
-            <button type="button">Fornitures</button>
+            <button type="button">Plants</button>
           </li>
           <li>
             <button type="button">Collectibles</button>

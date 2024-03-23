@@ -1,12 +1,13 @@
 const products = [
     {
       id: '1',
-      name: 'Bicicleta Z34',
-      price: "$1900",
-      category: 'celular',
-      img: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-      stock: 25,
-      description: 'Descripcion de Iphone 12',
+      name: 'CLASSIC PEACE LILY',
+      price: "$18",
+      category: 'plant',
+      img: 'https://s-media-cache-ak0.pinimg.com/236x/3b/36/ca/3b36ca3afe0fa0fd4984b9eee2e154bb.jpg',
+      stock: 8,
+      description: 'Classic Peace Lily is a spathiphyllum floor plant arranged in a bamboo planter with a blue & red ribbon and butterfly pick.',
+      subDescription: 'POPULAR HOUSE PLANT'
     },
 
     {
@@ -17,6 +18,7 @@ const products = [
       img: 'https://gtbfashion.com.pe/wp-content/uploads/2022/12/DSC07540-Editar.jpg',
       stock: 10,
       description: 'Descripcion de Iphone 12',
+      subDescription: 'POPULAR HOUSE PLANT'
     },
 
     {
@@ -27,6 +29,7 @@ const products = [
       img: 'https://images.pexels.com/photos/1290515/pexels-photo-1290515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       stock: 10,
       description: 'Descripcion de Iphone 12',
+      subDescription: 'POPULAR HOUSE PLANT'
     },
 
     {
@@ -37,7 +40,10 @@ const products = [
       img: 'https://images.pexels.com/photos/8123024/pexels-photo-8123024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       stock: 10,
       description: 'Descripcion de Iphone 12',
+      subDescription: 'POPULAR HOUSE PLANT'
     },
+
+
 
   ];
   
@@ -47,4 +53,12 @@ const products = [
         resolve(products);
       }, 500);
     });
+  }
+
+  export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+      setTimeout(()=>{
+        resolve(products.find(prod => prod.id === productId))
+      }, 500)
+    })
   }

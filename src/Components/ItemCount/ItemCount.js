@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import logoShop from '../../icons/bt_add_to_cart.svg'
 import './ItemCount.css';
 
 const ItemCount = ({stock, initial, onAdd}) => {
@@ -17,19 +18,23 @@ const ItemCount = ({stock, initial, onAdd}) => {
     };
 
     return (
-        <div className='Counter'>
-            <div>
-                <button className='Button'onClick={decrement}>-</button>
-                <h4 className='Number'>{quantity} </h4>    
-                <button className='Button'onClick={increment}>-</button>
-            </div> 
+      <div className='Counter'>
 
-            <div>
-                <button className='Button' onClick={() => onAdd(quantity)} disabled={!stock}>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
+       <div>
+          <button className='primary-button add-to-cart-button' onClick={() => onAdd(quantity)} disabled={!stock}>
+              <img src={logoShop} alt='logoShopD'/>
+              add to cart
+          </button>
+       </div>
+      
+       <div className='CounterButtons'>
+          <button className='Button' onClick={decrement} style={{borderColor: '#ACD9B2'}}>-</button>
+          <h4 className='Number'>{quantity}</h4>
+          <button className='Button' onClick={increment} style={{borderColor: '#ACD9B2'}}>+</button>
+       </div>
+
+      
+  </div>
     );
         
     
