@@ -64,3 +64,8 @@ body .card .description p {
     margin: 0;
 }
 
+
+body .card .description h5 {
+    margin-top: 10px; 
+    text-align: center; 
+}
